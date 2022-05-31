@@ -12,14 +12,13 @@ const mostrarReloj =() =>{
     let fechaTexto = `${diaSemana}, ${dia} ${mes}`;
     document.getElementById('fecha').innerHTML = fechaTexto
 
-    // la primera vez que cambiael objeto quita algo, y la segunda, lo pone 
+    // la primera vez que cambia el objeto quita algo, y la segunda, lo pone 
     document.getElementById('contenedor').classList.toggle('animar');
 }
 
 const formatoHora = (hora) =>{
     if(hora < 10){
         hora = '0' + hora;
-        
     }
     return hora;
 }
